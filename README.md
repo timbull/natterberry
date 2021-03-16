@@ -14,3 +14,8 @@ Natterberry is a Flutter application which helps refugees practice language with
 ## How can I help
 
 As you can see from the repository, there's not much here yet! We're just getting started. I'm working to speak with NGOs here in Athens, Greece that work with refugees to further scope and define the requirements, building out some prototype screens. If you're interested in helping refugee youth with a tool that will help them improve their opportunities through improving their language skills, I'd love to hear from you!
+
+## Git commits
+
+We follow the Conventional Commits 1.0.0 guidance for meaningful commit messages. [Read more](https://www.conventionalcommits.org/en/v1.0.0/)
+
