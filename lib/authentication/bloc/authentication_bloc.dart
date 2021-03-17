@@ -67,8 +67,6 @@ class AuthenticationBloc
       final user = await _userRepository.getUser();
       return user;
     } on Exception {
-      // Shoulds return an error state?
-      // return user;
       return null;
     }
   }

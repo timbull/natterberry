@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>564578242868-l9ceb8najqhi7fa9s3toh4nmnq87rioe.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.564578242868-l9ceb8najqhi7fa9s3toh4nmnq87rioe</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAdyKijSkXAkqSCSGlePFwgyq8wwEGjmpw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>564578242868</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.timbull.natterberry</string>
+	<key>PROJECT_ID</key>
+	<string>natterberry-cb08b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>natterberry-cb08b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:564578242868:ios:b5f66a936bd5af9868d561</string>
+</dict>
+</plist>
