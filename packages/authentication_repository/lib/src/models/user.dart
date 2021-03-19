@@ -8,11 +8,11 @@ import 'package:equatable/equatable.dart';
 class User extends Equatable {
   /// {@macro user}
   const User({
-    required this.email,
+    this.email,
     required this.id,
     this.name,
     this.photo,
-  }) : assert(email != null);
+  });
 
   /// The current user's email address.
   final String? email;
@@ -30,5 +30,6 @@ class User extends Equatable {
   static const empty = User(email: '', id: '', name: '', photo: '');
 
   @override
-  List<Object> get props => [email!, id, name!, photo!];
+  List<Object> get props =>
+      [email.toString(), id, name.toString(), photo.toString()];
 }
