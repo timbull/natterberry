@@ -5,19 +5,16 @@ import 'package:natterberry/authentication/authentication.dart';
 import 'package:natterberry/home/home.dart';
 import 'package:natterberry/login/login.dart';
 import 'package:natterberry/splash/splash.dart';
-import 'package:user_repository/user_repository.dart';
+import 'package:natterberry/theme.dart';
 
 class App extends StatelessWidget {
   const App({
     Key? key,
     required this.authenticationRepository,
-    required this.userRepository,
   })   : assert(authenticationRepository != null),
-        assert(userRepository != null),
         super(key: key);
 
   final AuthenticationRepository authenticationRepository;
-  final UserRepository userRepository;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +23,6 @@ class App extends StatelessWidget {
       child: BlocProvider(
         create: (_) => AuthenticationBloc(
           authenticationRepository: authenticationRepository,
-          userRepository: userRepository,
         ),
         child: AppView(),
       ),
@@ -47,6 +43,7 @@ class _AppViewState extends State<AppView> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: theme,
       navigatorKey: _navigatorKey,
       builder: (context, child) {
         return BlocListener<AuthenticationBloc, AuthenticationState>(

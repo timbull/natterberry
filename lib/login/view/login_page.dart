@@ -1,7 +1,7 @@
 import 'package:authentication_repository/authentication_repository.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:natterberry/login/login.dart';
-import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
   static Route route() {
@@ -13,14 +13,9 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Login')),
       body: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.all(8.0),
         child: BlocProvider(
-          create: (context) {
-            return LoginBloc(
-              authenticationRepository:
-                  RepositoryProvider.of<AuthenticationRepository>(context),
-            );
-          },
+          create: (_) => LoginCubit(context.read<AuthenticationRepository>()),
           child: LoginForm(),
         ),
       ),
