@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:natterberry/authentication/authentication.dart';
 import 'package:natterberry/home/home.dart';
-import 'package:natterberry/login/login.dart';
+//import 'package:natterberry/login/login.dart';
+import 'package:natterberry/firstrun/firstrun.dart';
 import 'package:natterberry/splash/splash.dart';
 import 'package:natterberry/theme.dart';
 
@@ -57,7 +58,7 @@ class _AppViewState extends State<AppView> {
                 break;
               case AuthenticationStatus.unauthenticated:
                 _navigator!.pushAndRemoveUntil<void>(
-                  LoginPage.route(),
+                  FirstrunPage.route(),
                   (route) => false,
                 );
                 break;
